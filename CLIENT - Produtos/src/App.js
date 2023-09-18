@@ -93,7 +93,7 @@ const aoDigitar = (e) => {
 
 //Remover produto
 const remover = () =>{
-  fetch("http://localhost:8080/remover" +objProduto.codigo,{
+  fetch("http://localhost:8080/remover/" +objProduto.codigo,{
     method: 'delete', //determina o tipo de parametro como DELETE
     headers:{
       'Content-type':'application/json',
